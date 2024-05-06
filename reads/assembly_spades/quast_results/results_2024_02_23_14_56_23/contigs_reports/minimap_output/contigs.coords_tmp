@@ -1,0 +1,12 @@
+NODE_1_length_132140_cov_9.694812	132140	72382	132140	-	Wildtype	197394	42902	102660	59757	59758	60	NM:i:1	ms:i:59752	AS:i:59752	nn:i:0	tp:A:P	cm:i:5905	s1:i:59741	s2:i:108	de:f:0.0000	rl:i:0	cg:Z:59758M	cs:Z::4396*ta:55361
+NODE_1_length_132140_cov_9.694812	132140	36503	72382	+	Wildtype	197394	102660	138540	35872	35881	60	NM:i:9	ms:i:35824	AS:i:35824	nn:i:0	tp:A:P	cm:i:3554	s1:i:35748	s2:i:0	de:f:0.0003	rl:i:0	cg:Z:719M1D3342M1I7818M1D23999M	cs:Z::308*gc:78*ta:331-a:3221*tg:120+t:3110*ta:4707-t:15339*ga*ta:8658
+NODE_1_length_132140_cov_9.694812	132140	0	34011	-	Wildtype	197394	157748	191759	34008	34014	60	NM:i:6	ms:i:33982	AS:i:33980	nn:i:0	tp:A:P	cm:i:3392	s1:i:33934	s2:i:0	de:f:0.0001	rl:i:0	cg:Z:2799M1D4M1D15569M3I14744M1D892M	cs:Z::2799-t:4-t:15569+aaa:14744-t:892
+NODE_1_length_132140_cov_9.694812	132140	34010	36503	-	Wildtype	197394	138540	141033	2490	2493	60	NM:i:3	ms:i:2475	AS:i:2475	nn:i:0	tp:A:P	cm:i:233	s1:i:2419	s2:i:0	de:f:0.0012	rl:i:0	cg:Z:2493M	cs:Z::336*gc:42*ag:33*ag:2079
+NODE_2_length_35124_cov_9.733415	35124	0	35124	-	Wildtype	197394	20	35144	35121	35124	60	NM:i:3	ms:i:35106	AS:i:35106	nn:i:0	tp:A:P	cm:i:3514	s1:i:35075	s2:i:53	de:f:0.0001	rl:i:0	cg:Z:35124M	cs:Z::92*gc:24274*ag:5090*tg:5665
+NODE_3_length_5947_cov_10.315673	5947	318	5947	+	Wildtype	197394	191760	197389	5629	5629	60	NM:i:0	ms:i:5629	AS:i:5629	nn:i:0	tp:A:P	cm:i:558	s1:i:5613	s2:i:0	de:f:0	rl:i:0	cg:Z:5629M	cs:Z::5629
+NODE_3_length_5947_cov_10.315673	5947	0	319	-	Wildtype	197394	36282	36601	319	319	60	NM:i:0	ms:i:319	AS:i:319	nn:i:0	tp:A:P	cm:i:28	s1:i:298	s2:i:58	de:f:0	rl:i:0	cg:Z:319M	cs:Z::319
+NODE_4_length_4708_cov_19.958324	4708	0	4708	-	Wildtype	197394	37237	41945	4707	4708	60	NM:i:1	ms:i:4702	AS:i:4702	nn:i:0	tp:A:P	cm:i:480	s1:i:4669	s2:i:58	de:f:0.0002	rl:i:0	cg:Z:4708M	cs:Z::1012*cg:3695
+NODE_5_length_790_cov_50.868163	790	0	790	+	Wildtype	197394	41870	42660	790	790	0	NM:i:0	ms:i:790	AS:i:790	nn:i:0	tp:A:P	cm:i:81	s1:i:765	s2:i:765	de:f:0	rl:i:0	cg:Z:790M	cs:Z::790
+NODE_5_length_790_cov_50.868163	790	0	790	-	Wildtype	197394	35067	35857	790	790	0	NM:i:0	ms:i:790	AS:i:790	nn:i:0	tp:A:S	cm:i:81	s1:i:765	de:f:0	rl:i:0	cg:Z:790M	cs:Z::790
+NODE_5_length_790_cov_50.868163	790	0	790	+	Wildtype	197394	36524	37314	790	790	0	NM:i:0	ms:i:790	AS:i:790	nn:i:0	tp:A:S	cm:i:81	s1:i:765	de:f:0	rl:i:0	cg:Z:790M	cs:Z::790
+NODE_6_length_579_cov_8.183267	579	0	579	+	Wildtype	197394	35780	36359	579	579	60	NM:i:0	ms:i:579	AS:i:579	nn:i:0	tp:A:P	cm:i:63	s1:i:557	s2:i:58	de:f:0	rl:i:0	cg:Z:579M	cs:Z::579

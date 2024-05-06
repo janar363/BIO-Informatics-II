@@ -1,0 +1,21 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+157749	191759	34011	1	Wildtype	NODE_1_length_132140_cov_9.694812	99.98		True
+relocation, inconsistency = 16716
+138541	141032	36503	34012	Wildtype	NODE_1_length_132140_cov_9.694812	99.88		True
+inversion
+102661	138540	36504	72382	Wildtype	NODE_1_length_132140_cov_9.694812	99.97		True
+inversion
+42903	102660	132140	72383	Wildtype	NODE_1_length_132140_cov_9.694812	100.0		True
+CONTIG	NODE_1_length_132140_cov_9.694812	132140	misassembled
+21	35144	35124	1	Wildtype	NODE_2_length_35124_cov_9.733415	99.99		True
+CONTIG	NODE_2_length_35124_cov_9.733415	35124	correct
+36284	36601	318	1	Wildtype	NODE_3_length_5947_cov_10.315673	100.0		True
+relocation, inconsistency = 155159
+191761	197389	319	5947	Wildtype	NODE_3_length_5947_cov_10.315673	100.0		True
+CONTIG	NODE_3_length_5947_cov_10.315673	5947	misassembled
+37238	41945	4708	1	Wildtype	NODE_4_length_4708_cov_19.958324	99.98		True
+CONTIG	NODE_4_length_4708_cov_19.958324	4708	correct
+41871	42660	1	790	Wildtype	NODE_5_length_790_cov_50.868163	100.0		True
+CONTIG	NODE_5_length_790_cov_50.868163	790	correct
+35781	36359	1	579	Wildtype	NODE_6_length_579_cov_8.183267	100.0		True
+CONTIG	NODE_6_length_579_cov_8.183267	579	correct

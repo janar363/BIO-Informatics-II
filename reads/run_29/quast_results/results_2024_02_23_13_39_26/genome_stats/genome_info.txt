@@ -1,0 +1,14 @@
+reference chromosomes:
+	Wildtype (total length: 197394 bp, total length without N's: 197394 bp, maximal covered length: 173638 bp)
+
+total genome size: 197394
+
+gap min size: 50
+partial gene/operon min size: 100
+
+
+
+assembly                 | genome    | duplication | gaps      | genes     | partial   | operons   | partial   |
+                         | fraction  | ratio       | number    |           | genes     |           | operons   |
+========================================================================================================================
+contigs                  | 87.965    | 1.001       | 22        | -         | -         | -         | -         |

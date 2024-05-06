@@ -1,0 +1,105 @@
+
+```{r}
+options(repos = c(CRAN = "https://cran.r-project.org"))
+install.packages(c("factoextra", "FactoMineR"))
+library(factoextra)
+library(FactoMineR)
+```
+
+```{r}
+data <- read.csv("data.csv", row.names = 1)
+```
+
+```{r}
+#install
+install.packages(c("factoextra", "FactoMineR"))
+
+#load
+library("factoextra")
+library("FactoMineR")
+```
+```{r}
+pca.data <- PCA(data[,-1], scale.unit = TRUE, graph = FALSE)
+```
+```{r}
+fviz_eig(pca.data, addlabels = TRUE, ylim = c(0, 70))
+```
+# Question 1
+
+first 2 principal component variations is 81.7%,
+ - 63.2 for first component
+ - 18.5 for second component
+ 
+ 
+
+```{r}
+fviz_pca_var(pca.data, col.var = "cos2",
+             gradient.cols = c("#FFCC00", "#CC9933", "#660033", "#330033"),
+             repel = TRUE)
+```
+```{r}
+pca.data <- PCA(t(data[,-1]), scale.unit = TRUE, graph = FALSE)
+```
+
+```{r}
+fviz_pca_ind(pca.data, col.ind = "cos2", 
+                  gradient.cols = c("#FFCC00", "#CC9933", "#660033", "#330033"), 
+                  repel = TRUE)
+
+```
+```{r}
+install.packages("devtools")
+library(devtools)
+
+#install
+devtools::install_github("kassambara/ggpubr")
+#load
+library(ggpubr)
+```
+
+```{r}
+a <- fviz_pca_ind(pca.data, col.ind = "cos2", 
+                  gradient.cols = c("#FFCC00", "#CC9933", "#660033", "#330033"), 
+                  repel = TRUE)
+```
+
+```{r}
+ggpar(a,
+      title = "Principal Component Analysis",
+      xlab = "PC1", ylab = "PC2",
+      legend.title = "Cos2", legend.position = "top",
+      ggtheme = theme_minimal())
+```
+```{r}
+pca.data <- PCA(data[,-1], scale.unit = TRUE,ncp = 2, graph = FALSE)
+```
+
+```{r}
+data$Lineage <- as.factor(data$Lineage)
+```
+
+```{r}
+install.packages("RColorBrewer")
+library(RColorBrewer)
+nb.cols <- 3
+mycolors <- colorRampPalette(brewer.pal(3, "Set1"))(nb.cols)
+```
+```{r}
+a <- fviz_pca_ind(pca.data, col.ind = data$Lineage,
+                  palette = mycolors, addEllipses = TRUE)
+```
+
+```{r}
+ggpar(a,
+      title = "Principal Component Analysis",
+      xlab = "PC1", ylab = "PC2",
+      legend.title = "Cell type", legend.position = "top",
+      ggtheme = theme_minimal())
+```
+# Question 2
+
+- gene markers in trophoectoderm (TE) cells are KRT18, KRT8, S100A16
+- gene markers in epiblast (EPI) cells are DPPA5, IFITM1, MT1X, UPP1
+- gene marker in primitive endoderm (PE) cells are APOA1
+
+since these some gene markers are highly expressed in specific cells, we use this to identify the type of the cell.

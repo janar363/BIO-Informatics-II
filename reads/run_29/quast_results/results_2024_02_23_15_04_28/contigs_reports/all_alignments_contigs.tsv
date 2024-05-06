@@ -1,0 +1,17 @@
+S1	E1	S2	E2	Reference	Contig	IDY	Ambiguous	Best_group
+41871	42660	1	790	Wildtype	NODE_1_length_762_cov_80.139107	100.0		True
+CONTIG	NODE_1_length_762_cov_80.139107	790	correct
+139	35095	1	34957	Wildtype	NODE_2_length_34929_cov_15.659681	99.99		True
+CONTIG	NODE_2_length_34929_cov_15.659681	34957	correct
+37287	41896	4610	1	Wildtype	NODE_3_length_4582_cov_31.976648	99.98		True
+CONTIG	NODE_3_length_4582_cov_31.976648	4610	correct
+157749	191760	34039	28	Wildtype	NODE_5_length_132112_cov_15.468088	99.98		True
+relocation, inconsistency = 16716
+138541	141032	36531	34040	Wildtype	NODE_5_length_132112_cov_15.468088	99.88		True
+inversion
+102661	138540	36532	72410	Wildtype	NODE_5_length_132112_cov_15.468088	99.97		True
+inversion, scaffold gap is present
+42875	102486	132140	72520	Wildtype	NODE_5_length_132112_cov_15.468088	99.99		True
+CONTIG	NODE_5_length_132112_cov_15.468088	132140	misassembled
+191761	197389	5629	1	Wildtype	NODE_7_length_5628_cov_15.916311	100.0		True
+CONTIG	NODE_7_length_5628_cov_15.916311	5656	correct

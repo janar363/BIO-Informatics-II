@@ -1,0 +1,4 @@
+NODE_5_length_132112_cov_15.468088
+Extensive misassembly (relocation, inconsistency = 16716) between 34039 28 and 36531 34040
+Extensive misassembly (inversion) between 36531 34040 and 36532 72410
+Extensive misassembly (inversion, scaffold gap is present) between 36532 72410 and 132140 72520

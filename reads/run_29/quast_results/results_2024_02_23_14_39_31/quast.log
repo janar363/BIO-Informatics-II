@@ -1,0 +1,54 @@
+/student/jkarravula/courses/bcb5250/bcb5250-env/bin/quast.py contigs.fa
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-4.18.0-513.11.1.el8_9.x86_64-x86_64-with-centos-8.9-Green_Obsidian (linux_64)
+  Python version: 3.6.8
+  CPUs number: 20
+
+Started: 2024-02-23 14:39:32
+
+Logging to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/run_29/quast_results/results_2024_02_23_14_39_31/quast.log
+NOTICE: Maximum number of threads is set to 5 (use --threads option to set it manually)
+
+CWD: /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/run_29
+Main parameters: 
+  MODE: default, threads: 5, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+WARNING: Can't draw plots: python-matplotlib is missing or corrupted.
+
+Contigs:
+  Pre-processing...
+  contigs.fa ==> contigs
+
+2024-02-23 14:39:32
+Running Basic statistics processor...
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 132140, L50 = 1, auN = 105172.7, Total length = 178153, GC % = 33.64, # N's per 100 kbp =  11.79
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-02-23 14:39:33
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 1: Creating Icarus viewers...
+Done
+
+2024-02-23 14:39:34
+RESULTS:
+  Text versions of total report are saved to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/run_29/quast_results/results_2024_02_23_14_39_31/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/run_29/quast_results/results_2024_02_23_14_39_31/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/run_29/quast_results/results_2024_02_23_14_39_31/report.html
+  Icarus (contig browser) is saved to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/run_29/quast_results/results_2024_02_23_14_39_31/icarus.html
+  Log is saved to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/run_29/quast_results/results_2024_02_23_14_39_31/quast.log
+
+Finished: 2024-02-23 14:39:34
+Elapsed time: 0:00:02.639459
+NOTICEs: 2; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

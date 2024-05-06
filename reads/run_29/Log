@@ -1,0 +1,43 @@
+Fri Feb 23 13:02:43 2024
+ /public/ahnt/software/velvet_1.2.10/velveth run_29 29 -fastq -shortPaired -interleaved bacterium_interleaved.fastq
+Version 1.2.10
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Fri Feb 23 13:17:24 2024
+ /public/ahnt/software/velvet_1.2.10/velvetg run_29
+Version 1.2.10
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 306 nodes and n50 of 5742, max 12904, total 182932, using 0/24960 reads
+Fri Feb 23 14:32:29 2024
+ /public/ahnt/software/velvet_1.2.10/velvetg run_29 -cov_cutoff 6
+Version 1.2.10
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 36 nodes and n50 of 34929, max 36531, total 178829, using 0/24960 reads
+Fri Feb 23 14:39:05 2024
+ /public/ahnt/software/velvet_1.2.10/velvetg run_29 -cov_cutoff 6 -exp_cov 14
+Version 1.2.10
+Copyright 2007, 2008 Daniel Zerbino (zerbino@ebi.ac.uk)
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+Compilation settings:
+CATEGORIES = 2
+MAXKMERLENGTH = 31
+
+Final graph has 22 nodes and n50 of 132112, max 132112, total 179374, using 24960/24960 reads

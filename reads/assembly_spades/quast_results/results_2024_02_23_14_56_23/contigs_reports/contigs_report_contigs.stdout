@@ -1,0 +1,87 @@
+Aligning contigs to reference...
+	Aligning contigs to the reference
+Filtering alignments...
+Parsing coords...
+Loading reference...
+	Loaded [Wildtype]
+	Total Regions: 1
+	Total Region Length: 197394
+Analyzing contigs...
+CONTIG: NODE_1_length_132140_cov_9.694812 (132140bp)
+Best alignment score: 59758.0 (LEN: 59758, IDY: 100.00), Total number of alignments: 4
+			Looking for the best set of alignments (out of 4 total alignments)
+			The best set is below. Score: 131370.9, number of alignments: 4, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 1 between Alignment 1 and 2: 138541 141033 | 36503 34011 | 2493 2493 --> 138541 141032 | 36503 34012 | 2492 2492
+			Real Alignment 1: 157749 191759 | 34011 1 | 34011 34011 | 99.98 | Wildtype NODE_1_length_132140_cov_9.694812
+			  Extensive misassembly (relocation, inconsistency = 16716) between these two alignments
+			Real Alignment 2: 138541 141032 | 36503 34012 | 2492 2492 | 99.88 | Wildtype NODE_1_length_132140_cov_9.694812
+			  Extensive misassembly (inversion) between these two alignments
+			Real Alignment 3: 102661 138540 | 36504 72382 | 35880 35879 | 99.97 | Wildtype NODE_1_length_132140_cov_9.694812
+			  Extensive misassembly (inversion) between these two alignments
+			Real Alignment 4: 42903 102660 | 132140 72383 | 59758 59758 | 100.0 | Wildtype NODE_1_length_132140_cov_9.694812
+
+CONTIG: NODE_2_length_35124_cov_9.733415 (35124bp)
+Best alignment score: 35120.5 (LEN: 35124, IDY: 99.99), Total number of alignments: 1
+		One align captures most of this contig: 21 35144 | 35124 1 | 35124 35124 | 99.99 | Wildtype NODE_2_length_35124_cov_9.733415
+
+CONTIG: NODE_3_length_5947_cov_10.315673 (5947bp)
+Best alignment score: 5629.0 (LEN: 5629, IDY: 100.00), Total number of alignments: 2
+			Looking for the best set of alignments (out of 2 total alignments)
+			The best set is below. Score: 5695.7, number of alignments: 2, unaligned bases: 0
+		This contig is misassembled.
+			Excluding internal overlap of size 1 between Alignment 1 and 2: 36283 36601 | 319 1 | 319 319 --> 36284 36601 | 318 1 | 318 318
+			Real Alignment 1: 36284 36601 | 318 1 | 318 318 | 100.0 | Wildtype NODE_3_length_5947_cov_10.315673
+			  Extensive misassembly (relocation, inconsistency = 155159) between these two alignments
+			Real Alignment 2: 191761 197389 | 319 5947 | 5629 5629 | 100.0 | Wildtype NODE_3_length_5947_cov_10.315673
+
+CONTIG: NODE_4_length_4708_cov_19.958324 (4708bp)
+Best alignment score: 4707.1 (LEN: 4708, IDY: 99.98), Total number of alignments: 1
+		One align captures most of this contig: 37238 41945 | 4708 1 | 4708 4708 | 99.98 | Wildtype NODE_4_length_4708_cov_19.958324
+
+CONTIG: NODE_5_length_790_cov_50.868163 (790bp)
+Best alignment score: 790.0 (LEN: 790, IDY: 100.00), Total number of alignments: 3
+		This contig has 3 significant alignments. [An ambiguously mapped contig]
+		Using only first of these alignment (option --ambiguity-usage is set to "one"):
+			Alignment: 41871 42660 | 1 790 | 790 790 | 100.0 | Wildtype NODE_5_length_790_cov_50.868163
+			Skipping alignment 35068 35857 | 790 1 | 790 790 | 100.0 | Wildtype NODE_5_length_790_cov_50.868163
+			Skipping alignment 36525 37314 | 1 790 | 790 790 | 100.0 | Wildtype NODE_5_length_790_cov_50.868163
+
+CONTIG: NODE_6_length_579_cov_8.183267 (579bp)
+Best alignment score: 579.0 (LEN: 579, IDY: 100.00), Total number of alignments: 1
+		One align captures most of this contig: 35781 36359 | 1 579 | 579 579 | 100.0 | Wildtype NODE_6_length_579_cov_8.183267
+
+Analyzing coverage...
+Writing SNPs into /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/quast_results/results_2024_02_23_14_56_23/contigs_reports/minimap_output/contigs.used_snps
+
+Analysis is finished!
+Founded SNPs were written into /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/quast_results/results_2024_02_23_14_56_23/contigs_reports/minimap_output/contigs.used_snps
+
+Results:
+	Local Misassemblies: 0
+	Misassemblies: 4
+		Relocations: 2
+		Translocations: 0
+		Inversions: 2
+	Scaffold gap extensive misassemblies: 0
+	Scaffold gap local misassemblies: 0
+	Misassembled Contigs: 2
+	Misassembled Contig Bases: 138087
+	Misassemblies Inter-Contig Overlap ("Extra" Aligned Bases): 0
+Unaligned Contigs: 0 + 0 part
+Half Unaligned Contigs with Misassemblies: 0
+Unaligned Bases in Fully and Partially Unaligned Contigs: 0
+
+Ambiguously Mapped Contigs: 1
+Total Bases in Ambiguously Mapped Contigs: 790
+"Extra" Aligned Bases in Ambiguously Mapped Contigs: 0
+Note that --allow-ambiguity option was set to "one" and only first alignment per each of these contigs was used (there is no "extra" aligned bases).
+
+	Covered Bases in Reference: 179138
+	Raw Aligned Bases in Assembly: 179288
+	Total Aligned Bases in Assembly (with "Extras"): 179288
+
+	SNPs: 14
+	Insertions: 4
+	Deletions: 5
+

@@ -1,0 +1,7 @@
+- "left reads":
+  - "/student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/split_input/bacterium_interleaved_1.fastq"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/split_input/bacterium_interleaved_2.fastq"
+  "type": "paired-end"

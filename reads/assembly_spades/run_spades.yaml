@@ -1,0 +1,172 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Preprocess reads
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: preprocess_start
+- STAGE: Preprocess interlaced reads
+  args:
+  - /public/ahnt/software/SPAdes-3.15.4-Linux/share/spades/spades_pipeline/scripts/preprocess_interlaced_reads.py
+  - --args_filename
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/split_input/tmp/interlaced
+  - --dst
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/split_input
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /student/jkarravula/courses/bcb5250/bcb5250-env/bin/python3
+  short_name: preprocess_12
+- STAGE: Preprocess reads
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: preprocess_finish
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: ec_start
+- STAGE: Read error correction
+  args:
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/corrected/configs/config.info
+  config_dir: corrected
+  del_after:
+  - tmp/hammer__h22uina
+  output_files:
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/corrected/corrected.yaml
+  path: /public/ahnt/software/SPAdes-3.15.4-Linux/bin/spades-hammer
+  short_name: ec_runtool
+- STAGE: corrected reads compression
+  args:
+  - /public/ahnt/software/SPAdes-3.15.4-Linux/share/spades/spades_pipeline/scripts/compress_all.py
+  - --input_file
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/corrected/corrected.yaml
+  - --ext_python_modules_home
+  - /public/ahnt/software/SPAdes-3.15.4-Linux/share/spades
+  - --max_threads
+  - '16'
+  - --output_dir
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/corrected
+  - --gzip_output
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /student/jkarravula/courses/bcb5250/bcb5250-env/bin/python3
+  short_name: ec_compress
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: ec_finish
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K21
+  args:
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/K21/configs/config.info
+  config_dir: K21
+  del_after: []
+  output_files: []
+  path: /public/ahnt/software/SPAdes-3.15.4-Linux/bin/spades-core
+  short_name: k21
+- STAGE: K33
+  args:
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/K33/configs/config.info
+  config_dir: K33
+  del_after: []
+  output_files: []
+  path: /public/ahnt/software/SPAdes-3.15.4-Linux/bin/spades-core
+  short_name: k33
+- STAGE: K55
+  args:
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/K55/configs/config.info
+  config_dir: K55
+  del_after: []
+  output_files: []
+  path: /public/ahnt/software/SPAdes-3.15.4-Linux/bin/spades-core
+  short_name: k55
+- STAGE: K77
+  args:
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/K77/configs/config.info
+  config_dir: K77
+  del_after: []
+  output_files: []
+  path: /public/ahnt/software/SPAdes-3.15.4-Linux/bin/spades-core
+  short_name: k77
+- STAGE: Copy files
+  args:
+  - /public/ahnt/software/SPAdes-3.15.4-Linux/share/spades/spades_pipeline/scripts/copy_files.py
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/K77/before_rr.fasta
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/before_rr.fasta
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/K77/assembly_graph_after_simplification.gfa
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/assembly_graph_after_simplification.gfa
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/K77/final_contigs.fasta
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/contigs.fasta
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/K77/first_pe_contigs.fasta
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/first_pe_contigs.fasta
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/K77/strain_graph.gfa
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/strain_graph.gfa
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/K77/scaffolds.fasta
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/scaffolds.fasta
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/K77/scaffolds.paths
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/scaffolds.paths
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/K77/assembly_graph_with_scaffolds.gfa
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/assembly_graph_with_scaffolds.gfa
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/K77/assembly_graph.fastg
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/assembly_graph.fastg
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/K77/final_contigs.paths
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_kvoq_jfo
+  output_files: []
+  path: /student/jkarravula/courses/bcb5250/bcb5250-env/bin/python3
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /public/ahnt/software/SPAdes-3.15.4-Linux/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/scaffolds.fasta
+  - --misc_dir
+  - /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /student/jkarravula/courses/bcb5250/bcb5250-env/bin/python3
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  output_files: []
+  path: 'true'
+  short_name: terminate

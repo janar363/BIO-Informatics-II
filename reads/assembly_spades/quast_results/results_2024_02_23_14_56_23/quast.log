@@ -1,0 +1,94 @@
+/student/jkarravula/courses/bcb5250/bcb5250-env/bin/quast.py -r /public/ahnt/courses/bcb5250/assembly_shortreads/refs/bacterium.fna contigs.fasta
+
+Version: 5.2.0
+
+System information:
+  OS: Linux-4.18.0-513.11.1.el8_9.x86_64-x86_64-with-centos-8.9-Green_Obsidian (linux_64)
+  Python version: 3.6.8
+  CPUs number: 20
+
+Started: 2024-02-23 14:56:23
+
+Logging to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/quast_results/results_2024_02_23_14_56_23/quast.log
+NOTICE: Maximum number of threads is set to 5 (use --threads option to set it manually)
+
+CWD: /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades
+Main parameters: 
+  MODE: default, threads: 5, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+WARNING: Can't draw plots: python-matplotlib is missing or corrupted.
+
+Reference:
+  /public/ahnt/courses/bcb5250/assembly_shortreads/refs/bacterium.fna ==> bacterium
+
+Contigs:
+  Pre-processing...
+  contigs.fasta ==> contigs
+
+2024-02-23 14:56:23
+Running Basic statistics processor...
+  Reference genome:
+    bacterium.fna, length = 197394, num fragments = 1, GC % = 33.43
+  Contig files: 
+    contigs
+  Calculating N50 and L50...
+    contigs, N50 = 132140, L50 = 1, auN = 104598.0, Total length = 179288, GC % = 33.59, # N's per 100 kbp =  0.00
+Done.
+
+2024-02-23 14:56:24
+Running Contig analyzer...
+  contigs
+  Logging to files /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/quast_results/results_2024_02_23_14_56_23/contigs_reports/contigs_report_contigs.stdout and contigs_report_contigs.stderr...
+  Aligning contigs to the reference
+  /student/jkarravula/courses/bcb5250/bcb5250-env/lib/python3.6/site-packages/quast_libs/minimap2/minimap2 \
+  -c -x asm10 -B5 -O4,16 --no-long-join -r 200 -N 50 -s 65 -z 200 --mask-level 0.9 \
+  --min-occ 200 -g 2500 --score-N 2 --cs -t 5 quast_results/results_2024_02_23_14_56_23/quast_corrected_input/bacterium.fna \
+  quast_results/results_2024_02_23_14_56_23/quast_corrected_input/contigs.fasta > \
+  quast_results/results_2024_02_23_14_56_23/contigs_reports/minimap_output/contigs.coords_tmp \
+  2>> quast_results/results_2024_02_23_14_56_23/contigs_reports/contigs_report_contigs.stderr
+  Analysis is finished.
+
+  Creating total report...
+    saved to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/quast_results/results_2024_02_23_14_56_23/contigs_reports/misassemblies_report.txt, misassemblies_report.tsv, and misassemblies_report.tex
+  Transposed version of total report...
+    saved to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/quast_results/results_2024_02_23_14_56_23/contigs_reports/transposed_report_misassemblies.txt, transposed_report_misassemblies.tsv, and transposed_report_misassemblies.tex
+  Creating total report...
+    saved to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/quast_results/results_2024_02_23_14_56_23/contigs_reports/unaligned_report.txt, unaligned_report.tsv, and unaligned_report.tex
+Done.
+
+2024-02-23 14:56:26
+Running NA-NGA calculation...
+  contigs, Largest alignment = 59758, NA50 = 35879, NGA50 = 35124, LA50 = 2, LGA50 = 3
+Done.
+
+2024-02-23 14:56:26
+Running Genome analyzer...
+  NOTICE: No file with genomic features were provided. Use the --features option if you want to specify it.
+
+  NOTICE: No file with operons were provided. Use the -O option if you want to specify it.
+  contigs
+  Analysis is finished.
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2024-02-23 14:56:27
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 1: Creating Icarus viewers...
+Done
+
+2024-02-23 14:56:27
+RESULTS:
+  Text versions of total report are saved to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/quast_results/results_2024_02_23_14_56_23/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/quast_results/results_2024_02_23_14_56_23/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/quast_results/results_2024_02_23_14_56_23/report.html
+  Icarus (contig browser) is saved to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/quast_results/results_2024_02_23_14_56_23/icarus.html
+  Log is saved to /student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/quast_results/results_2024_02_23_14_56_23/quast.log
+
+Finished: 2024-02-23 14:56:28
+Elapsed time: 0:00:04.857712
+NOTICEs: 4; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

@@ -1,0 +1,9 @@
+- "left reads":
+  - "/student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/corrected/bacterium_interleaved_1.00.0_0.cor.fastq.gz"
+  "number": !!int "1"
+  "orientation": "fr"
+  "right reads":
+  - "/student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/corrected/bacterium_interleaved_2.00.0_0.cor.fastq.gz"
+  "single reads":
+  - "/student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/corrected/bacterium_interleaved__unpaired.00.0_0.cor.fastq.gz"
+  "type": "paired-end"

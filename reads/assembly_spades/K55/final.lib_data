@@ -1,0 +1,38 @@
+€---
+max read length: 150
+nomerge max read length: 150
+average read length: 149.996
+average coverage: 13.223
+libraries:
+  - type:            paired-end
+    number:          1
+    orientation:     fr
+    left reads:
+      - '/student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/corrected/bacterium_interleaved_1.00.0_0.cor.fastq.gz'
+    right reads:
+      - '/student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/corrected/bacterium_interleaved_2.00.0_0.cor.fastq.gz'
+    single reads:
+      - '/student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/corrected/bacterium_interleaved__unpaired.00.0_0.cor.fastq.gz'
+    data:
+      unmerged read length: 150
+      merged read length: 0
+      insert size mean: 0
+      insert size deviation: 0
+      insert size left quantile: 0
+      insert size right quantile: 0
+      insert size median: 0
+      insert size mad: 0
+      insert size distribution: {  }
+      pi threshold:    0
+      binary reads info:
+        binary converted: true
+        bin reads info file: '/student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/.bin_reads/INFO_0'
+        paired read prefix: '/student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/.bin_reads/paired_0'
+        merged read prefix: '/student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/.bin_reads/merged_0'
+        single read prefix: '/student/jkarravula/courses/bcb5250/week2-6lab/assembly_shortreads/reads/assembly_spades/.bin_reads/single_0'
+        chunk num:       16
+      single reads mapped: false
+      library index:   0
+      number of reads: 24960
+      total nucleotides: 3743910
+...
